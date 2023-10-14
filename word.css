@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    --used: rgb(58,58,60);
+    --place: #b59f3b;
+    --match: green;
+}
+.guess td {
+    border: 2px solid rgb(58,58,60);
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+input.ng {
+    background-color: black;
+    width: 62px;
+    height: 62px;
+    font-family: sans-serif;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+}
+
+.keyArea {
+    max-width: 600px;
+    min-height: 175px;
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.attempts {
+    color: white;
+    text-align:center;
+}
+
+.letters {
+    border-radius: 14px;
+    width: 48px;
+    height: 48px;
+    margin: 3px;
+    font-family: sans-serif;
+    font-size: 24px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: grey;
+    float: left;
+    color: white;
+}
+
+.match, .letters.match {
+    background-color: var(--match);
+}
+
+.place, .letters.place {
+    background-color: var(--place);
+}
+
+.letters.used {
+    background-color: var(--used);
+}
+
+.letters span {
+    margin: 0 auto;
+    line-height: 48px;
+}
+
